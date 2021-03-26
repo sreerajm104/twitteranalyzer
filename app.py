@@ -137,7 +137,7 @@ def app():
                                         
                     return df
                 dfanalysis = Sentiment_Visualization()
-                sns.set_theme(style="whitegrid")
+                # sns.set_theme(style="darkgrid")
                 st.write(sns.countplot(x=dfanalysis['Analysis'], data=dfanalysis, linewidth=2, edgecolor=sns.color_palette("dark", 3),palette="Set3"))
                 st.set_option('deprecation.showPyplotGlobalUse', False)
                 st.pyplot(use_container_width=True)
@@ -145,12 +145,13 @@ def app():
     else:
         
         st.subheader("Export 100 tweets from the twitter handle to performs actions below")
-        st.write("Use Pandas Dataframe")
-        st.write("Use Regular Expression to clean the data")
-        st.write("Analyze the Subjectivity of tweets extracted")
-        st.write("Analyze the Polarity of tweets extracted")
-        st.write("Analyze the Sentiment Analysis of tweets extracted")
-        st.write("Display in a table format")
+        st.write("The below steps are implemented")
+        st.write("1. Use Pandas Dataframe")
+        st.write("2. Use Regular Expression to clean the data")
+        st.write("3. Analyze the Subjectivity of tweets extracted")
+        st.write("4. Analyze the Polarity of tweets extracted")
+        st.write("5. Analyze the Sentiment Analysis of tweets extracted")
+        st.write("6. Display in a table format")
 
         
         handler_id = st.text_area("Input the twitter handle of the Personality. Please DO NOT add the (@).")
