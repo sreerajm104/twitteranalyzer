@@ -138,8 +138,9 @@ def app():
                     return df
                 dfanalysis = Sentiment_Visualization()
                 # sns.set_theme(style="darkgrid")
-                st.write(sns.countplot(x=dfanalysis['Analysis'], data=dfanalysis, linewidth=2, edgecolor=sns.color_palette("dark", 3),palette="Set3"))
-                st.set_option('deprecation.showPyplotGlobalUse', False)
+                # st.write(sns.countplot(x=dfanalysis['Analysis'], data=dfanalysis, linewidth=2, edgecolor=sns.color_palette("dark", 3),palette="Set3"))
+                # st.set_option('deprecation.showPyplotGlobalUse', False)
+                st.write(sns.countplot(x=dfanalysis["Analysis"],data=dfanalysis))
                 st.pyplot(use_container_width=True)
     
     else:
